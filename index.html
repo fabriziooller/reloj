@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,34 @@
     <title>Reloj</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
 
+<body>
+    <main class="container bg-primary d-flex justify-content-center">
+        <section class="w-75">
+            <div class="d-flex">
+                <p id="diaSemana">Martes</p>
+                <p id="dia">09</p>
+                <p>de</p>
+                <p id="mes">junio</p>
+                <p>del</p>
+                <p id="anio">2020</p>
+            </div>
+            <div>
+                <p id="horas">09</p>
+                <p>:</p>
+                <p id="minutos">45</p>
+                <p>:</p>
+                <p id="segundos">30</p>
+                <p id="amPm">am</p>
+            </div>
+        </section>
+
+    </main>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/reloj.js"></script>
 </body>
+
 </html>
