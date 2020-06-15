@@ -7,25 +7,28 @@
     <meta name="keywords" content="reloj, hatml, css, js">
     <title>Reloj</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="container bg-primary d-flex justify-content-center">
-        <section class="w-75">
-            <div class="d-flex">
-                <p id="diaSemana">Martes</p>
-                <p id="dia">09</p>
+    <main class="container mt-5 d-flex justify-content-center">
+        <section class="w-75 blue">
+            <div class="d-flex justify-content-between fecha">
+                <p id="diaSemana"> </p>
+                <p id="dia"></p>
                 <p>de</p>
-                <p id="mes">junio</p>
+                <p id="mes"></p>
                 <p>del</p>
-                <p id="anio">2020</p>
+                <p id="anio"></p>
             </div>
-            <div>
-                <p id="horas">09</p>
+            <div class="d-flex justify-content-between timer">
+                <p id="horas"></p>
                 <p>:</p>
-                <p id="minutos">45</p>
+                <p id="minutos"></p>
                 <p>:</p>
-                <p id="segundos">30</p>
+                <p id="segundos"></p>
                 <p id="amPm">am</p>
             </div>
         </section>
