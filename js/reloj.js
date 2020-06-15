@@ -44,6 +44,16 @@ if(segundos < 10){
 } else{
   parrafSegundos.innerText = segundos;
 }
+if(minutos<10){
+  parrafMinutos.innerText = "0" + minutos;
+} else{
+  parrafMinutos.innerText = minutos;
+}
+if(horas < 10){
+  parrafHora.innerText = "0" + horas;
+} else{
+  parrafHora.innerText = horas;
+}
 
 parrafHora.innerText = hora;
 parrafMinutos.innerText = minutos;
