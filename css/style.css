@@ -47,3 +47,12 @@ text-transform: uppercase;
         0 0 100px #7BFFCE,
         0 0 150px #7BFFCE;
 }
+
+@media all and (min-width:600px) and (max-width:992px){
+    .container{font-size: 10px;
+        }
+}
+@media all and (max-width:599px){
+    .container{font-size: 7px;
+      }
+}

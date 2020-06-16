@@ -37,22 +37,30 @@ function crearHora() {
 //obtener objetos del html
 let parrafHora= document.getElementById("horas"),
 parrafMinutos = document.getElementById("minutos"),
-parrafSegundos = document.getElementById("segundos");
+parrafSegundos = document.getElementById("segundos"),
+parrafAmPm = document.getElementById("amPm");
+
 
 if(segundos < 10){
   parrafSegundos.innerText = "0" + segundos;
 } else{
   parrafSegundos.innerText = segundos;
 }
-if(minutos<10){
+if(minutos < 10){
   parrafMinutos.innerText = "0" + minutos;
 } else{
   parrafMinutos.innerText = minutos;
 }
-if(horas < 10){
-  parrafHora.innerText = "0" + horas;
+if(hora < 10){
+  parrafHora.innerText = "0" + hora;
 } else{
-  parrafHora.innerText = horas;
+  parrafHora.innerText = hora;
+}
+if(hora >= 12){
+  parrafAmPm.innerText = "PM";
+  hora = hora - 12;
+} else{
+  parrafAmPm.innerText ="AM";
 }
 
 parrafHora.innerText = hora;
